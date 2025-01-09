@@ -44,12 +44,8 @@ rm -i raw/*ipaddr*
 rm -i processed/user_logs/*ipaddr*
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
 touch inventory.txt
-code inventory.sh
-#edit inventory.sh with the following commands: 
-##!/bin/bash
-#cd ~/DSI_assignments/data/processed
-#ls server_logs user_logs event_logs
-bash inventory.sh
+cd ~/DSI_assignments/data/processed
+ls server_logs user_logs event_logs > inventory.txt
 
 ###########################################
 
