@@ -45,7 +45,7 @@ rm -i processed/user_logs/*ipaddr*
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
 touch inventory.txt
 cd ~/DSI_assignments/data/processed
-ls server_logs user_logs event_logs > inventory.txt
+ls server_logs user_logs event_logs > ../inventory.txt
 
 ###########################################
 
